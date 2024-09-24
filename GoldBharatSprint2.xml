@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="MyTestSuite" parallel="false">
+    <test name="user">
+        <classes>
+        <class name="Sprint_2.User_RegistrationLogin"/> 
+         <class name="Sprint_2.User_KYC_LTD"/> 
+         <class name="Sprint_2.AdminKycAccept"/> 
+         <class name="Sprint_2.BookBuy"/> 
+         <class name="Sprint_2.ManageOrders"/> 
+         <class name="Sprint_2.User_OrderPick"/> 
+         <class name="Sprint_2.Admin_SelfOther"/> 
+         <class name="Sprint_2.User_OrderDelivery"/> 
+         
+        </classes>
+    </test>
+
+</suite>
+
+
+
