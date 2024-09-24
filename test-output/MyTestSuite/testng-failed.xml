@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="user(failed)">
+    <classes>
+      <class name="GoldBharat.profileAndKYC">
+        <methods>
+          <include name="bsConfig"/>
+          <include name="profile"/>
+          <include name="bcConfig"/>
+        </methods>
+      </class> <!-- GoldBharat.profileAndKYC -->
+    </classes>
+  </test> <!-- user(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->
