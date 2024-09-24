@@ -13,19 +13,17 @@ public class GoldBharat_ProfileIconandKYC {
 	  @FindBy(xpath="//img[@class='goldsikkaimage']")private WebElement ProfileIcon;
 	    @FindBy(xpath="//p[@_ngcontent-ng-c3797498073='' and text()='KYC']")private WebElement KYC;
 	    @FindBy(xpath="//button[@class='btn-close']")private WebElement Close;
-	    
-	    
 	    @FindBy(xpath="//input[@formcontrolname='proprietor_name']")private WebElement ProprietorName;
 	    @FindBy(xpath="//input[@formcontrolname='proprietor_pan']")private WebElement ProprietorPan;
 	   @FindBy(xpath="//input[@formcontrolname='proprietor_pan_image']")private WebElement proprietor_pan_image;
 	   @FindBy(xpath="//input[@formcontrolname='proprietor_gst_image']")private WebElement proprietor_gst_image;
-	   
-	  	    @FindBy(xpath="//input[@formcontrolname='proprietor_gst']")private WebElement ProprietorGSTNO;
+	  	@FindBy(xpath="//input[@formcontrolname='proprietor_gst']")private WebElement ProprietorGSTNO;
 	    @FindBy(xpath="//input[@formcontrolname='bank_name']")private WebElement BankName;
 	    @FindBy(xpath="//input[@formcontrolname='account_number']")private WebElement AccountNumber;
 	    @FindBy(xpath="//input[@formcontrolname='ifsc_code']")private WebElement IFSCCode;
 	    @FindBy(xpath="//input[@formcontrolname='account_holder_name']")private WebElement HolderName;
-	
+		@FindBy (xpath = "//p[.='KYC']") private WebElement KycLnk;
+		 @FindBy(xpath = "//option[.='LTD']")private WebElement LtdOption;
 	    
 
 		
@@ -73,6 +71,12 @@ public class GoldBharat_ProfileIconandKYC {
 		public WebElement getHolderName() {
 			return HolderName;
 		}
+		public WebElement getKycLnk() {
+			return KycLnk;
+		}
+		public WebElement getLtdOption() {
+			return LtdOption;
+		}
 	//Business Libraries
 	
 		public boolean isProfileIconClickable() {
@@ -86,7 +90,7 @@ public class GoldBharat_ProfileIconandKYC {
 			return false;
 		}
 
-
+		
 		public void clickOnKYC() {
 			
 			KYC.click();
@@ -179,7 +183,11 @@ public void clickOnproprietor_pan_image() {
 			
 		}
 
-	
+		public void clickOnLtdOption() {
+			LtdOption.click();
+			
+		}
+
 	
 
 }

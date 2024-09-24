@@ -3,7 +3,7 @@
 <suite thread-count="1"  name="Suite">
   <test thread-count="1"  name="Test">
     <classes>
-      <class name="GoldBharat.AdminLogin"/>
+      <class name="Sprint_1.AdminLogin"/>
           
          </classes>
   </test> <!-- Test -->

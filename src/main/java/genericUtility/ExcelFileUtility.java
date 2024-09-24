@@ -11,11 +11,6 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-/**
- * This class contains excel file specific methods
- * @author vikra
- *
- */
 public class ExcelFileUtility {
 
 	/**

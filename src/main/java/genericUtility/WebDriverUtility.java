@@ -22,11 +22,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * This class contains all Generic methods related to WebDriver Actions.
- * @author vikra
- *
- */
 public class WebDriverUtility {
 
 	/**
@@ -473,8 +468,23 @@ public class WebDriverUtility {
 			r.keyRelease(KeyEvent.VK_PAGE_UP);
 		}
 	}
+	public void scrolldown(WebDriver driver) 
+    {
+    	JavascriptExecutor jse=(JavascriptExecutor)driver;
+    	jse.executeScript("window.scrollBy(0,200);");
+    }
 	
-}
+	 public void scrolldown(WebDriver driver,WebElement element) 
+	    {
+	    	JavascriptExecutor jse=(JavascriptExecutor)driver;
+	    	int y=element.getLocation().getY();
+	    	jse.executeScript("window.scrollBy(0,"+y+"):",element);
+	    }
+	
+
+	}
+	
+
 
 
 

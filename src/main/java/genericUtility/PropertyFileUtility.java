@@ -4,11 +4,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-/**
- * This class consists of generic methods related to property file
- * @author vikram
- *
- */
 public class PropertyFileUtility {
 
 	public String readDataFromPropertyFile(String key) throws IOException

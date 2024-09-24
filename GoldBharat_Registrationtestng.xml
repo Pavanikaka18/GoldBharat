@@ -5,7 +5,7 @@
 <suite name="MyTestSuite" parallel="false">
     <test name="Registration">
         <classes>
-         <class name="GoldBharat.RegistrationPage"/>
+         <class name="Sprint_1.RegistrationPage"/>
                 </classes>
     </test>
 

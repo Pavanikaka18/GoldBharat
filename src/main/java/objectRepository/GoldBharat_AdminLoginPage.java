@@ -16,36 +16,17 @@ public class GoldBharat_AdminLoginPage {
     @FindBy(xpath="//input[@formcontrolname='userId']")private WebElement AdminUserName;
     @FindBy(xpath="//input[@formcontrolname='password']")private WebElement AdminPwd;
     @FindBy(xpath="//button[@type='submit']")private WebElement AdminLoginBtn;
-    @FindBy(xpath="//p[contains(text(), 'Manage')]")private WebElement ManageLink;
-    
-   
-    
- // @FindBy(xpath=".//i[@class='fa fa-pencil']")private WebElement ActionEdit;
-  
-  @FindBy(xpath=".//i[@class='fa fa-pencil']")private WebElement ActionEdit;
-  
-  @FindBy(xpath="//button[@class='btn btn-success']")private WebElement Accept;
-  
-  @FindBy(xpath="//span[contains(@class, 'ng-tns-c821703010-1') and text()='Manage Distributor']")private WebElement ManageDistributor;
-  @FindBy(xpath="//input[@formcontrolname='silver_max_limit']")private WebElement Silverlimit;
-  
-  
-  
-  @FindBy(xpath="//input[@formcontrolname='max_limit']")private WebElement maxlimit;
-  
-  
-  
-  @FindBy(xpath="//button[@type='submit']")private WebElement SubmitBtn;
-
-  @FindBy(xpath="//table[@class='table table-hover mt-4']/tbody/tr")private List<WebElement> tables;
-	
-  
-  
-  
-  
-    
-      
-	//Create a constructor to initialize these elements
+    @FindBy(xpath="//p[contains(text(), 'Manage')]")private WebElement ManageLink; 
+    @FindBy(xpath=".//i[@class='fa fa-pencil']")private WebElement ActionEdit; 
+    @FindBy(xpath="//button[@class='btn btn-success']")private WebElement Accept;  
+    @FindBy(xpath="//span[contains(@class, 'ng-tns-c821703010-1') and text()='Manage Distributor']")private WebElement ManageDistributor;
+    @FindBy(xpath="//input[@formcontrolname='silver_max_limit']")private WebElement Silverlimit; 
+    @FindBy(xpath="//input[@formcontrolname='max_limit']")private WebElement maxlimit;
+    @FindBy(xpath="//button[@type='submit']")private WebElement SubmitBtn;
+  @FindBy(xpath="//table[@class='table table-hover mt-4']/tbody/tr")private List<WebElement> tables; 
+  @FindBy(xpath="//button[@class='logout']")private WebElement Profilebtn;
+  @FindBy(xpath="//button[.='Yes']")private WebElement Yes;
+  //Create a constructor to initialize these elements
     
 	public GoldBharat_AdminLoginPage(WebDriver driver)
 	{
@@ -106,6 +87,23 @@ public WebElement getManageDistributor() {
 		
 		return ManageDistributor;
 	}
+
+public WebElement getProfilebtn()
+{
+	return Profilebtn;
+}
+public WebElement getYes()
+{
+	return Yes;
+}
+public void clickOnProfilebtn()
+{
+	Profilebtn.click();
+}
+public void clickOnYes()
+{
+	Yes.click();
+}
  
 	public void clickOnManageDistributor() {
 		ManageDistributor.click();

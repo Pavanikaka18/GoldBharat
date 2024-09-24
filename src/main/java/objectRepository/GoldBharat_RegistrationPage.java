@@ -14,19 +14,14 @@ public class GoldBharat_RegistrationPage {
     @FindBy(xpath="//input[@formcontrolname='personName']")private WebElement PersonName;
     @FindBy(xpath="//input[@formcontrolname='email']")private WebElement Email;
     @FindBy(xpath="//input[@formcontrolname='phone']")private WebElement PhoneNumber;
-    @FindBy(xpath="//input[@formcontrolname='establishedDate']")private WebElement date;
-    
-    @FindBy(xpath="//input[@formcontrolname='pincode']")private WebElement PinCode;
+    @FindBy(xpath="//input[@formcontrolname='establishedDate']")private WebElement date;  
+   @FindBy(xpath="//input[@formcontrolname='pincode']")private WebElement PinCode;
    @FindBy(xpath="/html/body/app-root/app-register/section/div/div/div/form/div[9]/div[1]/p[2]/input")private WebElement Circle;
    @FindBy(xpath="//textarea[@formcontrolname='businessAddress']")private WebElement businessAddress;
    @FindBy(xpath="//button[contains(text(), 'Register')]")private WebElement RegisterBtn2;
    @FindBy(xpath="//input[@formcontrolname='phone']")private WebElement Phonenum;
    @FindBy(xpath="//button[@type='submit']")private WebElement SubmitBtn;
-   
-  
-   
-    @FindBy(xpath="//button[@type='submit']")private WebElement Register;
-    
+   @FindBy(xpath="//button[@type='submit']")private WebElement Register;
     @FindBy(xpath="//ng-otp-input/div/input[1]")private WebElement otp1;
     @FindBy(xpath="//ng-otp-input/div/input[2]")private WebElement otp2;
     @FindBy(xpath="//ng-otp-input/div/input[3]")private WebElement otp3;

@@ -3,13 +3,13 @@
 <suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="user(failed)">
     <classes>
-      <class name="GoldBharat.profileAndKYC">
+      <class name="Sprint_2.User_KYC_LLP">
         <methods>
           <include name="bsConfig"/>
-          <include name="profile"/>
           <include name="bcConfig"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- GoldBharat.profileAndKYC -->
+      </class> <!-- Sprint_2.User_KYC_LLP -->
     </classes>
   </test> <!-- user(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

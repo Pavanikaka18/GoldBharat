@@ -1,8 +1,5 @@
 
 package genericUtility;
-import java.util.Arrays;
-import java.util.Set;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -11,11 +8,6 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -48,7 +40,7 @@ public class GoldBharat_BaseClass {
 			
 				ChromeOptions options=new ChromeOptions();
 			
-								options.addArguments("--remote-allow-origins=*");
+				options.addArguments("--remote-allow-origins=*");
 				WebDriverManager.chromedriver().clearDriverCache().setup();
 				WebDriverManager.chromedriver().clearResolutionCache().setup();
 				WebDriverManager.chromedriver().setup();
@@ -94,14 +86,7 @@ public class GoldBharat_BaseClass {
 	  
 
 	  
-/*	  @AfterSuite
-	    public void tearDown() {
-	        if (driver != null) {
-	            driver.quit();
-	        }
-	    }
-		*/
-	 
+
 	
 	
 

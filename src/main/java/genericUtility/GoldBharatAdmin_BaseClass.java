@@ -8,11 +8,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -83,63 +79,5 @@ public class GoldBharatAdmin_BaseClass {
 			wUtility.waitUntilPageLoad(driver);
 			driver.get(URL);
 		}
-	/*	
-	//@BeforeMethod(groups={"sprint-1","Sprint-2"})
-		public void bmConfig() throws Exception, Exception
-		{
-		    String USERNAME = pUtility.readDataFromPropertyFile("username");
-		    String PASSWORD = pUtility.readDataFromPropertyFile("password");
-		    Thread.sleep(2000);
-		    LoginPage lPage = new LoginPage(driver);
-		    Thread.sleep(1000);
-		    lPage.loginToApplication(USERNAME, PASSWORD);
-		    Thread.sleep(6000);
-			System.out.println("---Login successfully---");
-		}
-        
-	//@AfterMethod(groups={"sprint-1","Sprint-2"})
-		public void amConfig() throws Exception
-		{
-//			ExcelFileUtility eUtil = new ExcelFileUtility();
-//		    String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
-			
-		    Thread.sleep(4000);
-		    DashboardPage dbPage = new DashboardPage(driver);
-		    dbPage.getUserNameDrpDwn().click();
-		    Thread.sleep(1000);
-		    MyProfilePage mpPage = new MyProfilePage(driver);
-		    mpPage.logoutOfApplication();
-		    
-		    System.out.println("Logout Successfully");
-		}
-        
-	//@AfterClass(groups={"sprint-1","Sprint-2"})
-		public void acConfig() throws InterruptedException
-		{
-		try 
-		{
-			Thread.sleep(1000);
-		} 
-		catch (Exception e) 
-		{
-			Thread.sleep(1000);
-		}
-		finally 
-		{
-			driver.quit();
-			System.out.println("Browser Closed Successfully");
-		}
-		}
-        
-	@AfterSuite(groups={"sprint-1","Sprint-2"})
-		public void asConfig()
-		{
-		   System.out.println("---Database Closed Successful---");
-		}
-
-*/
-	
-	
-	
 
 }
